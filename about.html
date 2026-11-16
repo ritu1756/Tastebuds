@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+
+</head>
+<body>
+    <header class="sticky top-0 z-50 bg-[#171717] text-white border-b border-amber-400/30 shadow-lg">
+
+    <div class="max-w-7xl mx-auto px-5 py-3 flex items-center justify-between">
+
+        <!-- Logo Image -->
+        <a href="index.html" class="flex items-center">
+            <img src="images/logo.png"
+                 alt="TasteBuds Restaurant Logo"
+                 class="w-[100px] h-[65px] object-contain">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-8">
+            <a href="index.html" class="text-amber-400 hover:text-amber-300">Home</a>
+            <a href="about.html" class="hover:text-amber-400">About</a>
+            <a href="menu.html" class="hover:text-amber-400">Menu</a>
+            <a href="gallery.html" class="hover:text-amber-400">Gallery</a>
+            <a href="contact.html" class="hover:text-amber-400">Contact</a>
+        </nav>
+
+        <!-- Book Table Button -->
+        <a href="contact.html"
+           class="hidden md:block bg-amber-400 text-black px-5 py-3 rounded-full font-semibold hover:bg-amber-300 transition">
+            Book A Table
+        </a>
+
+        <!-- Mobile Menu -->
+        <details class="md:hidden relative">
+            <summary class="cursor-pointer list-none text-3xl text-amber-400">
+                ☰
+            </summary>
+
+            <nav class="absolute right-0 top-12 z-50 bg-[#252525] w-48 p-5 rounded-xl shadow-xl flex flex-col gap-4">
+                <a href="index.html" class="hover:text-amber-400">Home</a>
+                <a href="about.html" class="hover:text-amber-400">About</a>
+                <a href="menu.html" class="hover:text-amber-400">Menu</a>
+                <a href="gallery.html" class="hover:text-amber-400">Gallery</a>
+                <a href="contact.html" class="hover:text-amber-400">Contact</a>
+
+                <a href="contact.html"
+                   class="bg-amber-400 text-black text-center py-2 rounded-full font-semibold">
+                    Book A Table
+                </a>
+            </nav>
+        </details>
+
+    </div>
+</header>
+
+<!-- About Hero Section -->
+<section class="bg-[#fffaf0] px-5 md:px-10 py-16 md:py-24">
+
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+    <!-- Left Content -->
+    <div>
+      <p class="text-amber-600 font-bold uppercase tracking-widest">
+        About TasteBuds
+      </p>
+
+      <h1 class="text-4xl md:text-6xl font-bold text-[#171717] mt-4 leading-tight">
+        We Serve Love
+        <span class="text-amber-500">On Every Plate!</span>
+      </h1>
+
+      <p class="text-gray-600 mt-6 leading-8">
+        Welcome to TasteBuds! We believe that great food brings
+        people together. Our passion is to serve delicious,
+        fresh and high-quality food with love.
+      </p>
+
+      <p class="text-gray-600 mt-4 leading-8">
+        Every dish is prepared with fresh ingredients,
+        creativity and care to make your dining experience special.
+      </p>
+
+      <a href="menu.html"
+        class="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-8 py-4 rounded-lg mt-8">
+        Explore Our Menu
+      </a>
+    </div>
+
+    <!-- Right Image -->
+    <div>
+      <img
+        src="images/mixed-platter.png"
+        alt="Delicious TasteBuds food platter"
+        class="w-full h-[350px] md:h-[480px] object-cover rounded-3xl shadow-xl"
+      >
+    </div>
+
+  </div>
+</section>
+
+<!-- Our Story Section -->
+<section class="bg-[#171717] px-5 md:px-10 py-20">
+
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+    <!-- Left Image -->
+    <div>
+      <img
+        src="images/offer-food.png"
+        alt="TasteBuds delicious food"
+        class="w-full h-[350px] md:h-[450px] object-cover rounded-3xl"
+      >
+    </div>
+
+    <!-- Right Content -->
+    <div>
+      <p class="text-amber-400 font-bold uppercase tracking-widest">
+        Our Story
+      </p>
+
+      <h2 class="text-3xl md:text-5xl font-bold text-white mt-4">
+        A Journey Of Taste And Passion
+      </h2>
+
+      <p class="text-gray-300 mt-6 leading-8">
+        TasteBuds started with a simple dream: to make every meal
+        memorable. We bring together fresh ingredients, delicious
+        recipes and a passion for cooking.
+      </p>
+
+      <p class="text-gray-300 mt-4 leading-8">
+        From our kitchen to your table, every dish is made with
+        care and served with a smile.
+      </p>
+
+      <div class="grid grid-cols-2 gap-6 mt-8">
+
+        <div>
+          <h3 class="text-3xl font-bold text-amber-400">5+</h3>
+          <p class="text-gray-300 mt-2">Years of Experience</p>
+        </div>
+
+        <div>
+          <h3 class="text-3xl font-bold text-amber-400">1000+</h3>
+          <p class="text-gray-300 mt-2">Happy Customers</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Mission & Vision Section -->
+<section class="bg-[#fffaf0] px-5 md:px-10 py-20">
+
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Heading -->
+    <div class="text-center mb-12">
+      <p class="text-amber-600 font-bold uppercase tracking-widest">
+        What We Believe
+      </p>
+
+      <h2 class="text-3xl md:text-5xl font-bold text-[#171717] mt-3">
+        Our Mission & Vision
+      </h2>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Mission Card -->
+      <div class="bg-[#171717] rounded-2xl p-8 md:p-10">
+        <div class="text-5xl mb-6">🎯</div>
+
+        <h3 class="text-2xl md:text-3xl font-bold text-amber-400">
+          Our Mission
+        </h3>
+
+        <p class="text-gray-300 mt-5 leading-8">
+          Our mission is to serve fresh, delicious and high-quality
+          food while creating memorable dining experiences for
+          every customer.
+        </p>
+      </div>
+
+      <!-- Vision Card -->
+      <div class="bg-[#171717] rounded-2xl p-8 md:p-10">
+        <div class="text-5xl mb-6">🌟</div>
+
+        <h3 class="text-2xl md:text-3xl font-bold text-amber-400">
+          Our Vision
+        </h3>
+
+        <p class="text-gray-300 mt-5 leading-8">
+          Our vision is to become a favourite food destination
+          known for amazing taste, excellent service and
+          customer happiness.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Our Chefs Section -->
+<section class="bg-[#171717] px-5 md:px-10 py-20">
+
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Heading -->
+    <div class="text-center mb-12">
+      <p class="text-amber-400 font-bold uppercase tracking-widest">
+        Our Team
+      </p>
+
+      <h2 class="text-3xl md:text-5xl font-bold text-white mt-3">
+        Meet Our Expert Chefs
+      </h2>
+
+      <p class="text-gray-400 mt-4">
+        The talented people behind our delicious food.
+      </p>
+    </div>
+
+    <!-- Chef Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Chef 1 -->
+      <div class="bg-[#252525] rounded-2xl overflow-hidden text-center">
+        <img
+          src="images/chef-1.png"
+          alt="Professional chef"
+          class="w-full h-72 object-cover object-top"
+        >
+
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-white">Arjun Mehta</h3>
+          <p class="text-amber-400 mt-2">Head Chef</p>
+          <p class="text-gray-400 mt-4">
+            Expert in creating delicious and creative dishes.
+          </p>
+        </div>
+      </div>
+
+      <!-- Chef 2 -->
+      <div class="bg-[#252525] rounded-2xl overflow-hidden text-center">
+        <img
+          src="images/chef-2.png"
+          alt="Professional chef"
+          class="w-full h-72 object-cover object-top"
+        >
+
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-white">Priya Kapoor</h3>
+          <p class="text-amber-400 mt-2">Pastry Chef</p>
+          <p class="text-gray-400 mt-4">
+            Specializes in desserts, cakes and sweet creations.
+          </p>
+        </div>
+      </div>
+
+      <!-- Chef 3 -->
+      <div class="bg-[#252525] rounded-2xl overflow-hidden text-center">
+        <img
+          src="images/chef-3.png"
+          alt="Professional chef"
+          class="w-full h-72 object-cover"
+        >
+
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-white">Rahul Sharma</h3>
+          <p class="text-amber-400 mt-2">Sous Chef</p>
+          <p class="text-gray-400 mt-4">
+            Passionate about fresh ingredients and great taste.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Visit Us Section -->
+<section class="bg-[#fffaf0] px-5 md:px-10 py-20">
+
+  <div class="max-w-7xl mx-auto">
+
+    <div class="bg-[#171717] rounded-3xl px-6 py-14 md:px-16 text-center">
+
+      <p class="text-amber-400 font-bold uppercase tracking-widest">
+        Come & Enjoy
+      </p>
+
+      <h2 class="text-3xl md:text-5xl font-bold text-white mt-4">
+        Ready For A Delicious Experience?
+      </h2>
+
+      <p class="text-gray-300 max-w-2xl mx-auto mt-5 leading-8">
+        Visit TasteBuds with your family and friends.
+        Enjoy delicious food, great flavours and unforgettable moments.
+      </p>
+
+      <div class="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+
+        <a href="menu.html"
+          class="bg-amber-400 hover:bg-amber-500 text-black font-bold px-8 py-4 rounded-lg">
+          Explore Menu
+        </a>
+
+        <a href="contact.html"
+          class="border border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-black font-bold px-8 py-4 rounded-lg">
+          Contact Us
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<footer class="bg-[#101010] text-white pt-14 pb-6">
+
+    <div class="max-w-7xl mx-auto px-5">
+
+        <!-- Footer Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+            <!-- About -->
+            <div>
+                <img src="images/logo.png"
+                     alt="TasteBuds Logo"
+                     class="w-[110px] h-[70px] object-contain mb-4">
+
+                <p class="text-gray-400 leading-7">
+                    Delicious food, beautiful moments and
+                    unforgettable dining experiences.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl font-semibold text-amber-400 mb-5">
+                    Quick Links
+                </h3>
+
+                <div class="flex flex-col gap-3 text-gray-400">
+                    <a href="index.html" class="hover:text-amber-400">Home</a>
+                    <a href="about.html" class="hover:text-amber-400">About Us</a>
+                    <a href="menu.html" class="hover:text-amber-400">Our Menu</a>
+                    <a href="gallery.html" class="hover:text-amber-400">Gallery</a>
+                    <a href="contact.html" class="hover:text-amber-400">Contact</a>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h3 class="text-xl font-semibold text-amber-400 mb-5">
+                    Contact Us
+                </h3>
+
+                <div class="flex flex-col gap-4 text-gray-400">
+                    <p>📍 Jaipur, Rajasthan</p>
+                    <p>📞 +91 9876543210</p>
+                    <p>✉️ hello@tastebuds.com</p>
+
+                    <div>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                         <i class="fa-brands fa-instagram"></i>
+                         <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Opening Hours -->
+            <div>
+                <h3 class="text-xl font-semibold text-amber-400 mb-5">
+                    Opening Hours
+                </h3>
+
+                <div class="text-gray-400 space-y-3">
+                    <p>Monday - Friday</p>
+                    <p class="text-amber-400">10 AM - 10 PM</p>
+
+                    <p>Saturday - Sunday</p>
+                    <p class="text-amber-400">11 AM - 11 PM</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-gray-700 mt-12 pt-6 text-center">
+            <p class="text-gray-400 text-sm">
+                © 2026 TasteBuds. All Rights Reserved.
+            </p>
+        </div>
+
+    </div>
+</footer>
+
+
+    
+</body>
+</html>
