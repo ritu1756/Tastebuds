@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+</head>
+<body>
+     <header class="sticky top-0 z-50 bg-[#171717] text-white border-b border-amber-400/30 shadow-lg">
+
+    <div class="max-w-7xl mx-auto px-5 py-3 flex items-center justify-between">
+
+        <!-- Logo Image -->
+        <a href="index.html" class="flex items-center">
+            <img src="images/logo.png"
+                 alt="TasteBuds Restaurant Logo"
+                 class="w-[100px] h-[65px] object-contain">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-8">
+            <a href="index.html" class="text-amber-400 hover:text-amber-300">Home</a>
+            <a href="about.html" class="hover:text-amber-400">About</a>
+            <a href="menu.html" class="hover:text-amber-400">Menu</a>
+            <a href="gallery.html" class="hover:text-amber-400">Gallery</a>
+            <a href="contact.html" class="hover:text-amber-400">Contact</a>
+        </nav>
+
+        <!-- Book Table Button -->
+        <a href="contact.html"
+           class="hidden md:block bg-amber-400 text-black px-5 py-3 rounded-full font-semibold hover:bg-amber-300 transition">
+            Book A Table
+        </a>
+
+        <!-- Mobile Menu -->
+        <details class="md:hidden relative">
+            <summary class="cursor-pointer list-none text-3xl text-amber-400">
+                ☰
+            </summary>
+
+            <nav class="absolute right-0 top-12 z-50 bg-[#252525] w-48 p-5 rounded-xl shadow-xl flex flex-col gap-4">
+                <a href="index.html" class="hover:text-amber-400">Home</a>
+                <a href="about.html" class="hover:text-amber-400">About</a>
+                <a href="menu.html" class="hover:text-amber-400">Menu</a>
+                <a href="gallery.html" class="hover:text-amber-400">Gallery</a>
+                <a href="contact.html" class="hover:text-amber-400">Contact</a>
+
+                <a href="contact.html"
+                   class="bg-amber-400 text-black text-center py-2 rounded-full font-semibold">
+                    Book A Table
+                </a>
+            </nav>
+        </details>
+
+    </div>
+</header>
+
+<!-- Menu Hero Section -->
+<section class="bg-[#171717] px-5 md:px-10 py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto text-center">
+
+    <p class="text-amber-400 font-bold uppercase tracking-widest">
+      Explore Our Menu
+    </p>
+
+    <h1 class="text-4xl md:text-6xl font-bold text-white mt-5">
+      Delicious Food For
+      <span class="text-amber-400">Every Mood!</span>
+    </h1>
+
+    <p class="text-gray-300 max-w-2xl mx-auto mt-6 leading-8">
+      Discover our delicious collection of freshly prepared dishes.
+      From tasty burgers to cheesy pizzas, we have something for everyone.
+    </p>
+
+    <a href="#food-menu"
+      class="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-8 py-4 rounded-lg mt-8">
+      View Our Menu
+    </a>
+
+  </div>
+
+</section>
+
+<!-- Food Categories Section -->
+<section class="bg-[#fffaf0] px-5 md:px-10 py-20">
+
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Heading -->
+    <div class="text-center mb-12">
+      <p class="text-amber-600 font-bold uppercase tracking-widest">
+        Food Categories
+      </p>
+
+      <h2 class="text-3xl md:text-5xl font-bold text-[#171717] mt-3">
+        Explore Our Categories
+      </h2>
+
+      <p class="text-gray-600 mt-4">
+        Choose your favourite food category.
+      </p>
+    </div>
+
+    <!-- Category Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-8">
+
+      <!-- Pizza -->
+      <div class="bg-white rounded-2xl shadow-md p-5 text-center hover:shadow-xl">
+        <img src="images/pizza.png"
+          alt="Pizza"
+          class="w-full h-36 md:h-48 object-cover rounded-xl">
+        <h3 class="text-xl font-bold text-[#171717] mt-4">Pizza</h3>
+      </div>
+
+      <!-- Burger -->
+      <div class="bg-white rounded-2xl shadow-md p-5 text-center hover:shadow-xl">
+        <img src="images/burger.png"
+          alt="Burger"
+          class="w-full h-36 md:h-48 object-cover rounded-xl">
+        <h3 class="text-xl font-bold text-[#171717] mt-4">Burger</h3>
+      </div>
+
+      <!-- Pasta -->
+      <div class="bg-white rounded-2xl shadow-md p-5 text-center hover:shadow-xl">
+        <img src="images/pasta.png"
+          alt="Pasta"
+          class="w-full h-36 md:h-48 object-cover rounded-xl">
+        <h3 class="text-xl font-bold text-[#171717] mt-4">Pasta</h3>
+      </div>
+
+      <!-- Desserts -->
+      <div class="bg-white rounded-2xl shadow-md p-5 text-center hover:shadow-xl">
+        <img src="images/dessert.jpg"
+          alt="Desserts"
+          class="w-full h-36 md:h-48 object-cover rounded-xl">
+        <h3 class="text-xl font-bold text-[#171717] mt-4">Desserts</h3>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Our Delicious Menu -->
+<section id="food-menu" class="bg-[#171717] px-5 md:px-10 py-20">
+
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Heading -->
+    <div class="text-center mb-12">
+      <p class="text-amber-400 font-bold uppercase tracking-widest">
+        Our Special Dishes
+      </p>
+
+      <h2 class="text-3xl md:text-5xl font-bold text-white mt-3">
+        Our Delicious Menu
+      </h2>
+
+      <p class="text-gray-400 mt-4">
+        Fresh ingredients, amazing flavours and unforgettable taste.
+      </p>
+    </div>
+
+    <!-- Food Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Card 1 -->
+      <div class="bg-[#252525] rounded-2xl overflow-hidden">
+        <img src="images/burger.png" alt="Classic Burger"
+          class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-white">Classic Burger</h3>
+          <p class="text-gray-400 mt-3">Juicy burger with fresh vegetables and cheese.</p>
+          <div class="flex justify-between items-center mt-6">
+            <span class="text-amber-400 text-xl font-bold">₹199</span>
+            <button class="bg-amber-400 text-black px-5 py-2 rounded-lg font-bold hover:bg-amber-500">
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-[#252525] rounded-2xl overflow-hidden">
+        <img src="images/pizza.png" alt="Cheese Pizza"
+          class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-white">Cheese Pizza</h3>
+          <p class="text-gray-400 mt-3">Delicious pizza loaded with melted cheese.</p>
+          <div class="flex justify-between items-center mt-6">
+            <span class="text-amber-400 text-xl font-bold">₹299</span>
+            <button class="bg-amber-400 text-black px-5 py-2 rounded-lg font-bold hover:bg-amber-500">
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-[#252525] rounded-2xl overflow-hidden">
+        <img src="images/pasta.png" alt="Creamy Pasta"
+          class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-white">Creamy Pasta</h3>
+          <p class="text-gray-400 mt-3">Creamy pasta with herbs and special sauce.</p>
+          <div class="flex justify-between items-center mt-6">
+            <span class="text-amber-400 text-xl font-bold">₹249</span>
+            <button class="bg-amber-400 text-black px-5 py-2 rounded-lg font-bold hover:bg-amber-500">
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-[#252525] rounded-2xl overflow-hidden">
+        <img src="images/chicken.png" alt="Crispy Chicken"
+          class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-white">Crispy Chicken</h3>
+          <p class="text-gray-400 mt-3">Crunchy and delicious fried chicken.</p>
+          <div class="flex justify-between items-center mt-6">
+            <span class="text-amber-400 text-xl font-bold">₹279</span>
+            <button class="bg-amber-400 text-black px-5 py-2 rounded-lg font-bold hover:bg-amber-500">
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-[#252525] rounded-2xl overflow-hidden">
+        <img src="images/salad.png" alt="Fresh Salad"
+          class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-white">Fresh Salad</h3>
+          <p class="text-gray-400 mt-3">Healthy salad with fresh vegetables.</p>
+          <div class="flex justify-between items-center mt-6">
+            <span class="text-amber-400 text-xl font-bold">₹149</span>
+            <button class="bg-amber-400 text-black px-5 py-2 rounded-lg font-bold hover:bg-amber-500">
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="bg-[#252525] rounded-2xl overflow-hidden">
+        <img src="images/dessert.png" alt="Chocolate Dessert"
+          class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-white">Chocolate Dessert</h3>
+          <p class="text-gray-400 mt-3">Sweet chocolate dessert for a perfect ending.</p>
+          <div class="flex justify-between items-center mt-6">
+            <span class="text-amber-400 text-xl font-bold">₹179</span>
+            <button class="bg-amber-400 text-black px-5 py-2 rounded-lg font-bold hover:bg-amber-500">
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Today's Special Offer -->
+<section class="bg-[#fffaf0] px-5 md:px-10 py-20">
+
+  <div class="max-w-7xl mx-auto bg-[#171717] rounded-3xl overflow-hidden grid grid-cols-1 md:grid-cols-2 items-center">
+
+    <!-- Left Content -->
+    <div class="p-8 md:p-14">
+
+      <p class="text-amber-400 font-bold uppercase tracking-widest">
+        Limited Time Offer
+      </p>
+
+      <h2 class="text-3xl md:text-5xl font-bold text-white mt-5 leading-tight">
+        Get 30% OFF On Your Favourite Food!
+      </h2>
+
+      <p class="text-gray-300 mt-6 leading-8">
+        Enjoy delicious food with amazing discounts.
+        Order your favourite dishes and make every meal special.
+      </p>
+
+      <a href="contact.html"
+        class="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-8 py-4 rounded-lg mt-8">
+        Grab This Offer
+      </a>
+
+    </div>
+
+    <!-- Right Image -->
+    <div class="h-full min-h-[280px]">
+      <img
+        src="images/offer-food.png"
+        alt="TasteBuds special food offer"
+        class="w-full h-full min-h-[280px] md:min-h-[430px] object-cover"
+      >
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Why Choose Our Food -->
+<section class="bg-[#171717] px-5 md:px-10 py-20">
+
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Heading -->
+    <div class="text-center mb-12">
+      <p class="text-amber-400 font-bold uppercase tracking-widest">
+        Our Quality
+      </p>
+
+      <h2 class="text-3xl md:text-5xl font-bold text-white mt-3">
+        Why Choose Our Food?
+      </h2>
+
+      <p class="text-gray-400 mt-4">
+        Great taste, fresh ingredients and quality in every bite.
+      </p>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- Card 1 -->
+      <div class="bg-[#252525] p-8 rounded-2xl text-center">
+        <div class="text-5xl">🥗</div>
+        <h3 class="text-xl font-bold text-amber-400 mt-5">
+          Fresh Ingredients
+        </h3>
+        <p class="text-gray-400 mt-3 leading-7">
+          We use fresh and quality ingredients in every dish.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-[#252525] p-8 rounded-2xl text-center">
+        <div class="text-5xl">👨‍🍳</div>
+        <h3 class="text-xl font-bold text-amber-400 mt-5">
+          Expert Chefs
+        </h3>
+        <p class="text-gray-400 mt-3 leading-7">
+          Our talented chefs prepare food with passion and care.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-[#252525] p-8 rounded-2xl text-center">
+        <div class="text-5xl">❤️</div>
+        <h3 class="text-xl font-bold text-amber-400 mt-5">
+          Made With Love
+        </h3>
+        <p class="text-gray-400 mt-3 leading-7">
+          Every meal is prepared to make your experience special.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-[#252525] p-8 rounded-2xl text-center">
+        <div class="text-5xl">⭐</div>
+        <h3 class="text-xl font-bold text-amber-400 mt-5">
+          Best Quality
+        </h3>
+        <p class="text-gray-400 mt-3 leading-7">
+          We focus on quality, taste and customer satisfaction.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Customer Reviews -->
+<section class="bg-[#fffaf0] px-5 md:px-10 py-20">
+
+  <div class="max-w-7xl mx-auto">
+
+    <div class="text-center mb-12">
+      <p class="text-amber-600 font-bold uppercase tracking-widest">
+        Customer Feedback
+      </p>
+
+      <h2 class="text-3xl md:text-5xl font-bold text-[#171717] mt-3">
+        Loved By Our Customers
+      </h2>
+
+      <p class="text-gray-600 mt-4">
+        See what people say about our delicious food.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Review 1 -->
+      <div class="bg-white p-8 rounded-2xl shadow-md">
+        <div class="text-amber-500 text-2xl">★★★★★</div>
+        <p class="text-gray-600 mt-5 leading-7">
+          "The burger was so delicious and fresh. Amazing taste!"
+        </p>
+        <h3 class="font-bold text-[#171717] mt-6">Aman Verma</h3>
+        <p class="text-gray-500 text-sm">Happy Customer</p>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="bg-white p-8 rounded-2xl shadow-md">
+        <div class="text-amber-500 text-2xl">★★★★★</div>
+        <p class="text-gray-600 mt-5 leading-7">
+          "Loved the pizza! Great quality and wonderful experience."
+        </p>
+        <h3 class="font-bold text-[#171717] mt-6">Neha Sharma</h3>
+        <p class="text-gray-500 text-sm">Happy Customer</p>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="bg-white p-8 rounded-2xl shadow-md">
+        <div class="text-amber-500 text-2xl">★★★★★</div>
+        <p class="text-gray-600 mt-5 leading-7">
+          "Everything was perfect. I would definitely order again."
+        </p>
+        <h3 class="font-bold text-[#171717] mt-6">Rohit Singh</h3>
+        <p class="text-gray-500 text-sm">Happy Customer</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Order CTA Section -->
+<section class="bg-[#171717] px-5 md:px-10 py-20">
+
+  <div class="max-w-5xl mx-auto text-center">
+
+    <p class="text-amber-400 font-bold uppercase tracking-widest">
+      Hungry Now?
+    </p>
+
+    <h2 class="text-3xl md:text-5xl font-bold text-white mt-4">
+      Your Favourite Food Is Just One Click Away!
+    </h2>
+
+    <p class="text-gray-400 mt-6 leading-8 max-w-2xl mx-auto">
+      Explore our delicious dishes and get ready to enjoy
+      an amazing food experience with TasteBuds.
+    </p>
+
+    <div class="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+
+      <a href="contact.html"
+        class="bg-amber-400 hover:bg-amber-500 text-black font-bold px-8 py-4 rounded-lg">
+        Contact Us
+      </a>
+
+      <a href="index.html"
+        class="border border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-black font-bold px-8 py-4 rounded-lg">
+        Back To Home
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+<footer class="bg-[#101010] text-white pt-14 pb-6">
+
+    <div class="max-w-7xl mx-auto px-5">
+
+        <!-- Footer Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+            <!-- About -->
+            <div>
+                <img src="images/logo.png"
+                     alt="TasteBuds Logo"
+                     class="w-[110px] h-[70px] object-contain mb-4">
+
+                <p class="text-gray-400 leading-7">
+                    Delicious food, beautiful moments and
+                    unforgettable dining experiences.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl font-semibold text-amber-400 mb-5">
+                    Quick Links
+                </h3>
+
+                <div class="flex flex-col gap-3 text-gray-400">
+                    <a href="index.html" class="hover:text-amber-400">Home</a>
+                    <a href="about.html" class="hover:text-amber-400">About Us</a>
+                    <a href="menu.html" class="hover:text-amber-400">Our Menu</a>
+                    <a href="gallery.html" class="hover:text-amber-400">Gallery</a>
+                    <a href="contact.html" class="hover:text-amber-400">Contact</a>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h3 class="text-xl font-semibold text-amber-400 mb-5">
+                    Contact Us
+                </h3>
+
+                <div class="flex flex-col gap-4 text-gray-400">
+                    <p>📍 Jaipur, Rajasthan</p>
+                    <p>📞 +91 9876543210</p>
+                    <p>✉️ hello@tastebuds.com</p>
+
+                    <div>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                         <i class="fa-brands fa-instagram"></i>
+                         <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Opening Hours -->
+            <div>
+                <h3 class="text-xl font-semibold text-amber-400 mb-5">
+                    Opening Hours
+                </h3>
+
+                <div class="text-gray-400 space-y-3">
+                    <p>Monday - Friday</p>
+                    <p class="text-amber-400">10 AM - 10 PM</p>
+
+                    <p>Saturday - Sunday</p>
+                    <p class="text-amber-400">11 AM - 11 PM</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-gray-700 mt-12 pt-6 text-center">
+            <p class="text-gray-400 text-sm">
+                © 2026 TasteBuds. All Rights Reserved.
+            </p>
+        </div>
+
+    </div>
+</footer>
+
+    
+</body>
+</html>
