@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+</head>
+<body>
+     <header class="sticky top-0 z-50 bg-[#171717] text-white border-b border-amber-400/30 shadow-lg">
+
+    <div class="max-w-7xl mx-auto px-5 py-3 flex items-center justify-between">
+
+        <!-- Logo Image -->
+        <a href="index.html" class="flex items-center">
+            <img src="images/logo.png"
+                 alt="TasteBuds Restaurant Logo"
+                 class="w-[100px] h-[65px] object-contain">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-8">
+            <a href="index.html" class="text-amber-400 hover:text-amber-300">Home</a>
+            <a href="about.html" class="hover:text-amber-400">About</a>
+            <a href="menu.html" class="hover:text-amber-400">Menu</a>
+            <a href="gallery.html" class="hover:text-amber-400">Gallery</a>
+            <a href="contact.html" class="hover:text-amber-400">Contact</a>
+        </nav>
+
+        <!-- Book Table Button -->
+        <a href="contact.html"
+           class="hidden md:block bg-amber-400 text-black px-5 py-3 rounded-full font-semibold hover:bg-amber-300 transition">
+            Book A Table
+        </a>
+
+        <!-- Mobile Menu -->
+        <details class="md:hidden relative">
+            <summary class="cursor-pointer list-none text-3xl text-amber-400">
+                ☰
+            </summary>
+
+            <nav class="absolute right-0 top-12 z-50 bg-[#252525] w-48 p-5 rounded-xl shadow-xl flex flex-col gap-4">
+                <a href="index.html" class="hover:text-amber-400">Home</a>
+                <a href="about.html" class="hover:text-amber-400">About</a>
+                <a href="menu.html" class="hover:text-amber-400">Menu</a>
+                <a href="gallery.html" class="hover:text-amber-400">Gallery</a>
+                <a href="contact.html" class="hover:text-amber-400">Contact</a>
+
+                <a href="contact.html"
+                   class="bg-amber-400 text-black text-center py-2 rounded-full font-semibold">
+                    Book A Table
+                </a>
+            </nav>
+        </details>
+
+    </div>
+</header>
+
+<!-- Gallery Hero Section -->
+<section class="bg-[#171717] px-5 md:px-10 py-20 md:py-28">
+
+  <div class="max-w-7xl mx-auto text-center">
+
+    <p class="text-amber-400 font-bold uppercase tracking-widest">
+      Our Food Gallery
+    </p>
+
+    <h1 class="text-4xl md:text-6xl font-bold text-white mt-5">
+      A Visual Taste Of
+      <span class="text-amber-400">Happiness!</span>
+    </h1>
+
+    <p class="text-gray-300 max-w-2xl mx-auto mt-6 leading-8">
+      Explore our delicious food creations, beautiful dishes
+      and memorable moments at TasteBuds.
+    </p>
+
+    <a href="#gallery"
+      class="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-8 py-4 rounded-lg mt-8">
+      Explore Gallery
+    </a>
+
+  </div>
+
+</section>
+
+<!-- Food Gallery Section -->
+<section id="gallery" class="bg-[#fffaf0] px-5 md:px-10 py-20">
+
+  <div class="max-w-7xl mx-auto">
+
+    <div class="text-center mb-12">
+      <p class="text-amber-600 font-bold uppercase tracking-widest">
+        Delicious Moments
+      </p>
+
+      <h2 class="text-3xl md:text-5xl font-bold text-[#171717] mt-3">
+        Our Food Gallery
+      </h2>
+
+      <p class="text-gray-600 mt-4">
+        Fresh, tasty and beautifully served food.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="overflow-hidden rounded-2xl shadow-lg">
+        <img src="images/burger.png" alt="Delicious Burger"
+          class="w-full h-72 object-cover hover:scale-105 transition duration-500">
+      </div>
+
+      <div class="overflow-hidden rounded-2xl shadow-lg">
+        <img src="images/pizza.png" alt="Cheese Pizza"
+          class="w-full h-72 object-cover hover:scale-105 transition duration-500">
+      </div>
+
+      <div class="overflow-hidden rounded-2xl shadow-lg">
+        <img src="images/pasta.png" alt="Creamy Pasta"
+          class="w-full h-72 object-cover hover:scale-105 transition duration-500">
+      </div>
+
+      <div class="overflow-hidden rounded-2xl shadow-lg">
+        <img src="images/chicken.png" alt="Crispy Chicken"
+          class="w-full h-72 object-cover hover:scale-105 transition duration-500">
+      </div>
+
+      <div class="overflow-hidden rounded-2xl shadow-lg">
+        <img src="images/salad.png" alt="Fresh Salad"
+          class="w-full h-72 object-cover hover:scale-105 transition duration-500">
+      </div>
+
+      <div class="overflow-hidden rounded-2xl shadow-lg">
+        <img src="images/dessert.png" alt="Chocolate Dessert"
+          class="w-full h-72 object-cover hover:scale-105 transition duration-500">
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Special Moments Section -->
+<section class="bg-[#171717] px-5 md:px-10 py-20">
+
+  <div class="max-w-7xl mx-auto">
+
+    <div class="text-center mb-12">
+      <p class="text-amber-400 font-bold uppercase tracking-widest">
+        Taste The Difference
+      </p>
+
+      <h2 class="text-3xl md:text-5xl font-bold text-white mt-3">
+        Made With Love
+      </h2>
+
+      <p class="text-gray-300 mt-4 max-w-2xl mx-auto">
+        Every dish tells a story of freshness, quality and passion.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Left Image -->
+      <div class="relative overflow-hidden rounded-2xl group">
+        <img src="images/offer-food.png"
+          alt="Special Food Platter"
+          class="w-full h-80 md:h-[450px] object-cover group-hover:scale-105 transition duration-500">
+
+        <div class="absolute inset-0 bg-black/40 flex items-end p-8">
+          <div>
+            <h3 class="text-2xl font-bold text-white">
+              Freshly Prepared Meals
+            </h3>
+            <p class="text-gray-200 mt-2">
+              Fresh ingredients in every bite.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="relative overflow-hidden rounded-2xl group">
+        <img src="images/mixed-platter.png"
+          alt="Mixed Food Platter"
+          class="w-full h-80 md:h-[450px] object-cover group-hover:scale-105 transition duration-500">
+
+        <div class="absolute inset-0 bg-black/40 flex items-end p-8">
+          <div>
+            <h3 class="text-2xl font-bold text-white">
+              A Feast Of Flavours
+            </h3>
+            <p class="text-gray-200 mt-2">
+              Delicious moments made special.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Gallery CTA Section -->
+<section class="bg-[#fffaf0] px-5 md:px-10 py-20">
+
+  <div class="max-w-6xl mx-auto">
+
+    <div class="bg-[#171717] rounded-3xl px-6 py-14 md:p-16 text-center">
+
+      <p class="text-amber-400 font-bold uppercase tracking-widest">
+        Come And Enjoy
+      </p>
+
+      <h2 class="text-3xl md:text-5xl font-bold text-white mt-4">
+        Hungry For Something
+        <span class="text-amber-400">Delicious?</span>
+      </h2>
+
+      <p class="text-gray-300 max-w-2xl mx-auto mt-5 leading-8">
+        Visit TasteBuds and enjoy delicious food, amazing flavours
+        and unforgettable moments with your loved ones.
+      </p>
+
+      <div class="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+
+        <a href="menu.html"
+          class="bg-amber-400 hover:bg-amber-500 text-black font-bold px-8 py-4 rounded-lg">
+          Explore Menu
+        </a>
+
+        <a href="contact.html"
+          class="border border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-black font-bold px-8 py-4 rounded-lg">
+          Contact Us
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<footer class="bg-[#101010] text-white pt-14 pb-6">
+
+    <div class="max-w-7xl mx-auto px-5">
+
+        <!-- Footer Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+            <!-- About -->
+            <div>
+                <img src="images/logo.png"
+                     alt="TasteBuds Logo"
+                     class="w-[110px] h-[70px] object-contain mb-4">
+
+                <p class="text-gray-400 leading-7">
+                    Delicious food, beautiful moments and
+                    unforgettable dining experiences.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl font-semibold text-amber-400 mb-5">
+                    Quick Links
+                </h3>
+
+                <div class="flex flex-col gap-3 text-gray-400">
+                    <a href="index.html" class="hover:text-amber-400">Home</a>
+                    <a href="about.html" class="hover:text-amber-400">About Us</a>
+                    <a href="menu.html" class="hover:text-amber-400">Our Menu</a>
+                    <a href="gallery.html" class="hover:text-amber-400">Gallery</a>
+                    <a href="contact.html" class="hover:text-amber-400">Contact</a>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h3 class="text-xl font-semibold text-amber-400 mb-5">
+                    Contact Us
+                </h3>
+
+                <div class="flex flex-col gap-4 text-gray-400">
+                    <p>📍 Jaipur, Rajasthan</p>
+                    <p>📞 +91 9876543210</p>
+                    <p>✉️ hello@tastebuds.com</p>
+
+                    <div>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                         <i class="fa-brands fa-instagram"></i>
+                         <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Opening Hours -->
+            <div>
+                <h3 class="text-xl font-semibold text-amber-400 mb-5">
+                    Opening Hours
+                </h3>
+
+                <div class="text-gray-400 space-y-3">
+                    <p>Monday - Friday</p>
+                    <p class="text-amber-400">10 AM - 10 PM</p>
+
+                    <p>Saturday - Sunday</p>
+                    <p class="text-amber-400">11 AM - 11 PM</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-gray-700 mt-12 pt-6 text-center">
+            <p class="text-gray-400 text-sm">
+                © 2026 TasteBuds. All Rights Reserved.
+            </p>
+        </div>
+
+    </div>
+</footer>
+    
+</body>
+</html>
