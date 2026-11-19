@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | TasteBuds</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header class="sticky top-0 z-50 bg-[#171717] text-white border-b border-amber-400/30 shadow-lg">
+
+    <div class="max-w-7xl mx-auto px-5 py-3 flex items-center justify-between">
+
+        <!-- Logo Image -->
+        <a href="index.html" class="flex items-center">
+            <img src="images/logo.png"
+                 alt="TasteBuds Restaurant Logo"
+                 class="w-[100px] h-[65px] object-contain">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-8">
+            <a href="index.html" class="text-amber-400 hover:text-amber-300">Home</a>
+            <a href="about.html" class="hover:text-amber-400">About</a>
+            <a href="menu.html" class="hover:text-amber-400">Menu</a>
+            <a href="gallery.html" class="hover:text-amber-400">Gallery</a>
+            <a href="contact.html" class="hover:text-amber-400">Contact</a>
+        </nav>
+
+        <!-- Book Table Button -->
+        <a href="contact.html"
+           class="hidden md:block bg-amber-400 text-black px-5 py-3 rounded-full font-semibold hover:bg-amber-300 transition">
+            Book A Table
+        </a>
+
+        <!-- Mobile Menu -->
+        <details class="md:hidden relative">
+            <summary class="cursor-pointer list-none text-3xl text-amber-400">
+                ☰
+            </summary>
+
+            <nav class="absolute right-0 top-12 z-50 bg-[#252525] w-48 p-5 rounded-xl shadow-xl flex flex-col gap-4">
+                <a href="index.html" class="hover:text-amber-400">Home</a>
+                <a href="about.html" class="hover:text-amber-400">About</a>
+                <a href="menu.html" class="hover:text-amber-400">Menu</a>
+                <a href="gallery.html" class="hover:text-amber-400">Gallery</a>
+                <a href="contact.html" class="hover:text-amber-400">Contact</a>
+
+                <a href="contact.html"
+                   class="bg-amber-400 text-black text-center py-2 rounded-full font-semibold">
+                    Book A Table
+                </a>
+            </nav>
+        </details>
+
+    </div>
+</header>
+
+  <!-- Contact Hero Section -->
+  <section class="bg-[#171717] px-5 md:px-10 py-20 md:py-28">
+
+    <div class="max-w-7xl mx-auto text-center">
+
+      <p class="text-amber-400 font-bold uppercase tracking-widest">
+        Get In Touch
+      </p>
+
+      <h1 class="text-4xl md:text-6xl font-bold text-white mt-5">
+        We'd Love To
+        <span class="text-amber-400">Hear From You!</span>
+      </h1>
+
+      <p class="text-gray-300 max-w-2xl mx-auto mt-6 leading-8">
+        Have a question, feedback or want to book a table?
+        Contact us and we'll be happy to help you.
+      </p>
+
+      <a href="#contact-info"
+        class="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-8 py-4 rounded-lg mt-8">
+        Contact Us
+      </a>
+
+    </div>
+
+  </section>
+
+<!-- Contact Form Section -->
+<section class="bg-[#171717] px-5 md:px-10 py-20">
+
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+    <!-- Left Content -->
+    <div>
+      <p class="text-amber-400 font-bold uppercase tracking-widest">
+        Get In Touch
+      </p>
+
+      <h2 class="text-3xl md:text-5xl font-bold text-white mt-4">
+        Send Us Your
+        <span class="text-amber-400">Message!</span>
+      </h2>
+
+      <p class="text-gray-300 mt-6 leading-8">
+        We'd love to hear from you. Fill out the form and
+        share your questions, feedback or suggestions with us.
+      </p>
+
+      <div class="mt-8 space-y-4 text-gray-300">
+        <p>🍽️ Fresh Food, Fresh Experience</p>
+        <p>❤️ Made With Love</p>
+        <p>⭐ Quality You Can Trust</p>
+      </div>
+    </div>
+
+    <!-- Right Contact Form -->
+    <div class="bg-white rounded-2xl p-6 md:p-10 shadow-xl">
+
+      <h3 class="text-2xl font-bold text-[#171717] mb-7">
+        Send a Message
+      </h3>
+
+      <form class="space-y-5">
+
+        <div>
+          <label class="block text-gray-700 font-semibold mb-2">
+            Full Name
+          </label>
+          <input type="text" placeholder="Enter your name"
+            class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-amber-400">
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-semibold mb-2">
+            Email Address
+          </label>
+          <input type="email" placeholder="Enter your email"
+            class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-amber-400">
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-semibold mb-2">
+            Phone Number
+          </label>
+          <input type="tel" placeholder="Enter your phone number"
+            class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-amber-400">
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-semibold mb-2">
+            Your Message
+          </label>
+          <textarea rows="4" placeholder="Write your message..."
+            class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-amber-400"></textarea>
+        </div>
+
+        <button type="submit"
+          class="w-full bg-amber-400 hover:bg-amber-500 text-black font-bold py-4 rounded-lg">
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- Location Section -->
+<section class="bg-[#fffaf0] px-5 md:px-10 py-20">
+
+  <div class="max-w-7xl mx-auto">
+
+    <div class="text-center mb-12">
+      <p class="text-amber-600 font-bold uppercase tracking-widest">
+        Find Our Restaurant
+      </p>
+
+      <h2 class="text-3xl md:text-5xl font-bold text-[#171717] mt-3">
+        Visit TasteBuds
+      </h2>
+
+      <p class="text-gray-600 mt-4">
+        We'd love to welcome you to our restaurant!
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+
+      <!-- Location Details -->
+      <div class="bg-[#171717] rounded-2xl p-8 md:p-12">
+
+        <h3 class="text-2xl font-bold text-white">
+          Come Visit Us
+        </h3>
+
+        <p class="text-gray-300 mt-5 leading-8">
+          Experience delicious food and wonderful hospitality
+          at TasteBuds.
+        </p>
+
+        <div class="mt-7 space-y-5">
+
+          <div>
+            <p class="text-amber-400 font-bold">📍 Address</p>
+            <p class="text-gray-300 mt-2">
+              Jaipur, Rajasthan, India
+            </p>
+          </div>
+
+          <div>
+            <p class="text-amber-400 font-bold">🕒 Opening Hours</p>
+            <p class="text-gray-300 mt-2">
+              Monday - Sunday: 10 AM - 10 PM
+            </p>
+          </div>
+
+        </div>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=restaurants+in+Jaipur"
+          target="_blank"
+          class="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-7 py-3 rounded-lg mt-8">
+          Get Directions
+        </a>
+
+      </div>
+
+      <!-- Map -->
+      <div class="rounded-2xl overflow-hidden shadow-lg h-80 md:h-[400px]">
+
+        <iframe
+          src="https://maps.google.com/maps?q=Jaipur%20Rajasthan&t=&z=12&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+</body>
+<footer class="bg-[#101010] text-white pt-14 pb-6">
+
+    <div class="max-w-7xl mx-auto px-5">
+
+        <!-- Footer Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+            <!-- About -->
+            <div>
+                <img src="images/logo.png"
+                     alt="TasteBuds Logo"
+                     class="w-[110px] h-[70px] object-contain mb-4">
+
+                <p class="text-gray-400 leading-7">
+                    Delicious food, beautiful moments and
+                    unforgettable dining experiences.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl font-semibold text-amber-400 mb-5">
+                    Quick Links
+                </h3>
+
+                <div class="flex flex-col gap-3 text-gray-400">
+                    <a href="index.html" class="hover:text-amber-400">Home</a>
+                    <a href="about.html" class="hover:text-amber-400">About Us</a>
+                    <a href="menu.html" class="hover:text-amber-400">Our Menu</a>
+                    <a href="gallery.html" class="hover:text-amber-400">Gallery</a>
+                    <a href="contact.html" class="hover:text-amber-400">Contact</a>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h3 class="text-xl font-semibold text-amber-400 mb-5">
+                    Contact Us
+                </h3>
+
+                <div class="flex flex-col gap-4 text-gray-400">
+                    <p>📍 Jaipur, Rajasthan</p>
+                    <p>📞 +91 9876543210</p>
+                    <p>✉️ hello@tastebuds.com</p>
+
+                    <div>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                         <i class="fa-brands fa-instagram"></i>
+                         <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Opening Hours -->
+            <div>
+                <h3 class="text-xl font-semibold text-amber-400 mb-5">
+                    Opening Hours
+                </h3>
+
+                <div class="text-gray-400 space-y-3">
+                    <p>Monday - Friday</p>
+                    <p class="text-amber-400">10 AM - 10 PM</p>
+
+                    <p>Saturday - Sunday</p>
+                    <p class="text-amber-400">11 AM - 11 PM</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-gray-700 mt-12 pt-6 text-center">
+            <p class="text-gray-400 text-sm">
+                © 2026 TasteBuds. All Rights Reserved.
+            </p>
+        </div>
+
+    </div>
+</footer>
+</html>
