@@ -84,8 +84,49 @@
   </div>
 
 </section>
+<!-- Food Categories -->
+<section class="bg-[#fffaf0] px-6 py-10">
 
-<!-- Food Gallery Section -->
+    <div class="text-center mb-8">
+        <h2 class="text-3xl font-bold text-[#171717]">
+            Explore Food Categories
+        </h2>
+        <p class="text-gray-600 mt-2">
+            Discover your favourite dishes
+        </p>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-4">
+
+        <a href="#food-gallery"
+           class="bg-amber-500 text-white px-7 py-3 rounded-full font-semibold">
+            All Foods
+        </a>
+
+        <a href="#pizza"
+           class="bg-[#171717] text-white px-7 py-3 rounded-full">
+            Pizza
+        </a>
+
+        <a href="#burger"
+           class="bg-[#171717] text-white px-7 py-3 rounded-full">
+            Burger
+        </a>
+
+        <a href="#pasta"
+           class="bg-[#171717] text-white px-7 py-3 rounded-full">
+            Pasta
+        </a>
+
+        <a href="#dessert"
+           class="bg-[#171717] text-white px-7 py-3 rounded-full">
+            Desserts
+        </a>
+
+    </div>
+</section>
+
+
 <section id="gallery" class="bg-[#fffaf0] px-5 md:px-10 py-20">
 
   <div class="max-w-7xl mx-auto">
@@ -104,36 +145,103 @@
       </p>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Food Gallery Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <div class="overflow-hidden rounded-2xl shadow-lg">
-        <img src="images/burger.png" alt="Delicious Burger"
-          class="w-full h-72 object-cover hover:scale-105 transition duration-500">
+      <!-- Burger -->
+      <div class="group">
+        <div class="overflow-hidden rounded-2xl shadow-lg">
+          <img src="images/burger.png" alt="Delicious Burger"
+            class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+        </div>
+        <div class="mt-4 text-center">
+          <p class="text-amber-600 font-semibold uppercase tracking-wider text-sm">
+            Fast Food
+          </p>
+          <h3 class="text-xl font-bold text-[#171717] mt-1">
+            Cheese Burger
+          </h3>
+        </div>
       </div>
 
-      <div class="overflow-hidden rounded-2xl shadow-lg">
-        <img src="images/pizza.png" alt="Cheese Pizza"
-          class="w-full h-72 object-cover hover:scale-105 transition duration-500">
+      <!-- Pizza -->
+      <div class="group">
+        <div class="overflow-hidden rounded-2xl shadow-lg">
+          <img src="images/pizza.png" alt="Cheese Pizza"
+            class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+        </div>
+        <div class="mt-4 text-center">
+          <p class="text-amber-600 font-semibold uppercase tracking-wider text-sm">
+            Italian Food
+          </p>
+          <h3 class="text-xl font-bold text-[#171717] mt-1">
+            Margherita Pizza
+          </h3>
+        </div>
       </div>
 
-      <div class="overflow-hidden rounded-2xl shadow-lg">
-        <img src="images/pasta.png" alt="Creamy Pasta"
-          class="w-full h-72 object-cover hover:scale-105 transition duration-500">
+      <!-- Pasta -->
+      <div class="group">
+        <div class="overflow-hidden rounded-2xl shadow-lg">
+          <img src="images/pasta.png" alt="Creamy Pasta"
+            class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+        </div>
+        <div class="mt-4 text-center">
+          <p class="text-amber-600 font-semibold uppercase tracking-wider text-sm">
+            Italian Food
+          </p>
+          <h3 class="text-xl font-bold text-[#171717] mt-1">
+            Creamy White Sauce Pasta
+          </h3>
+        </div>
       </div>
 
-      <div class="overflow-hidden rounded-2xl shadow-lg">
-        <img src="images/chicken.png" alt="Crispy Chicken"
-          class="w-full h-72 object-cover hover:scale-105 transition duration-500">
+      <!-- Chicken -->
+      <div class="group">
+        <div class="overflow-hidden rounded-2xl shadow-lg">
+          <img src="images/chicken.png" alt="Crispy Chicken"
+            class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+        </div>
+        <div class="mt-4 text-center">
+          <p class="text-amber-600 font-semibold uppercase tracking-wider text-sm">
+            Non-Veg
+          </p>
+          <h3 class="text-xl font-bold text-[#171717] mt-1">
+            Crispy Fried Chicken
+          </h3>
+        </div>
       </div>
 
-      <div class="overflow-hidden rounded-2xl shadow-lg">
-        <img src="images/salad.png" alt="Fresh Salad"
-          class="w-full h-72 object-cover hover:scale-105 transition duration-500">
+      <!-- Salad -->
+      <div class="group">
+        <div class="overflow-hidden rounded-2xl shadow-lg">
+          <img src="images/salad.png" alt="Fresh Salad"
+            class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+        </div>
+        <div class="mt-4 text-center">
+          <p class="text-amber-600 font-semibold uppercase tracking-wider text-sm">
+            Healthy Food
+          </p>
+          <h3 class="text-xl font-bold text-[#171717] mt-1">
+            Fresh Garden Salad
+          </h3>
+        </div>
       </div>
 
-      <div class="overflow-hidden rounded-2xl shadow-lg">
-        <img src="images/dessert.png" alt="Chocolate Dessert"
-          class="w-full h-72 object-cover hover:scale-105 transition duration-500">
+      <!-- Dessert -->
+      <div class="group">
+        <div class="overflow-hidden rounded-2xl shadow-lg">
+          <img src="images/dessert.png" alt="Chocolate Dessert"
+            class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+        </div>
+        <div class="mt-4 text-center">
+          <p class="text-amber-600 font-semibold uppercase tracking-wider text-sm">
+            Sweet Treats
+          </p>
+          <h3 class="text-xl font-bold text-[#171717] mt-1">
+            Chocolate Brownie
+          </h3>
+        </div>
       </div>
 
     </div>
@@ -141,6 +249,69 @@
   </div>
 
 </section>
+
+
+<!-- Restaurant Interior Section -->
+<section class="bg-[#fffaf0] px-6 md:px-12 lg:px-24 py-16">
+    <div class="max-w-7xl mx-auto">
+      <!-- Heading -->
+    <div class="text-center mb-10">
+        <p class="text-amber-600 font-semibold uppercase tracking-widest">
+            Our Restaurant
+        </p>
+
+        <h2 class="text-3xl md:text-4xl font-bold text-[#171717] mt-2">
+            Explore Our Interior
+        </h2>
+
+        <p class="text-gray-600 mt-3">
+            Enjoy delicious food in a beautiful and comfortable atmosphere.
+        </p>
+    </div>
+
+    <!-- 5 Images Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        <!-- Image 1 -->
+        <div class="lg:row-span-2 overflow-hidden rounded-2xl group">
+            <img src="images/interior1.png"
+                 alt="Restaurant Dining Area"
+                 class="w-full h-full min-h-[250px] object-cover group-hover:scale-105 transition duration-500">
+        </div>
+
+        <!-- Image 2 -->
+        <div class="lg:col-span-2 overflow-hidden rounded-2xl group">
+            <img src="images/interior2.png"
+                 alt="Restaurant Interior"
+                 class="w-full h-[250px] object-cover group-hover:scale-105 transition duration-500">
+        </div>
+
+        <!-- Image 3 -->
+        <div class="overflow-hidden rounded-2xl group">
+            <img src="images/interior3.png"
+                 alt="Cozy Restaurant Seating"
+                 class="w-full h-[250px] object-cover group-hover:scale-105 transition duration-500">
+        </div>
+
+        <!-- Image 4 -->
+        <div class="overflow-hidden rounded-2xl group">
+            <img src="images/interior4.png"
+                 alt="Restaurant Decoration"
+                 class="w-full h-[250px] object-cover group-hover:scale-105 transition duration-500">
+        </div>
+
+        <!-- Image 5 -->
+        <div class="lg:col-span-2 overflow-hidden rounded-2xl group">
+            <img src="images/interior5.png"
+                 alt="Beautiful Restaurant Ambience"
+                 class="w-full h-[250px] object-cover group-hover:scale-105 transition duration-500">
+        </div>
+
+    </div>
+    </div>
+    
+</section>
+
 
 <!-- Special Moments Section -->
 <section class="bg-[#171717] px-5 md:px-10 py-20">
