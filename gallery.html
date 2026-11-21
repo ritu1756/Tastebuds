@@ -85,6 +85,7 @@
 
 </section>
 <!-- Food Categories -->
+
 <section class="bg-[#fffaf0] px-6 py-10">
 
     <div class="text-center mb-8">
@@ -123,132 +124,173 @@
             Desserts
         </a>
 
+        <a href="#noodles"
+           class="bg-[#171717] text-white px-7 py-3 rounded-full">
+            Chinese Food
+        </a>
+
+        <a href="#momos"
+           class="bg-[#171717] text-white px-7 py-3 rounded-full">
+            Street Food
+        </a>
+
+        <a href="#fries"
+           class="bg-[#171717] text-white px-7 py-3 rounded-full">
+            Fast Food
+        </a>
+
+        <a href="#sandwich"
+           class="bg-[#171717] text-white px-7 py-3 rounded-full">
+            Snacks
+        </a>
+
+        <a href="#paneer-tikka"
+           class="bg-[#171717] text-white px-7 py-3 rounded-full">
+            Indian Food
+        </a>
+
     </div>
 </section>
 
 
-<section id="gallery" class="bg-[#fffaf0] px-5 md:px-10 py-20">
+
+
+<section id="gallery" class="bg-[#171717] px-5 md:px-10 py-20">
 
   <div class="max-w-7xl mx-auto">
 
+    <!-- Section Heading -->
     <div class="text-center mb-12">
-      <p class="text-amber-600 font-bold uppercase tracking-widest">
-        Delicious Moments
+      <p class="text-amber-500 font-bold uppercase tracking-widest mb-3">
+        Our Food Collection
       </p>
 
-      <h2 class="text-3xl md:text-5xl font-bold text-[#171717] mt-3">
-        Our Food Gallery
+      <h2 class="text-3xl md:text-4xl font-bold text-white">
+        Explore Our Food Gallery
       </h2>
 
-      <p class="text-gray-600 mt-4">
-        Fresh, tasty and beautifully served food.
+      <p class="text-gray-300 mt-4 max-w-2xl mx-auto">
+        Discover our delicious dishes, freshly prepared with love and the finest ingredients.
       </p>
     </div>
 
     <!-- Food Gallery Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div id="food-gallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <!-- Burger -->
-      <div class="group">
-        <div class="overflow-hidden rounded-2xl shadow-lg">
-          <img src="images/burger.png" alt="Delicious Burger"
-            class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
-        </div>
-        <div class="mt-4 text-center">
-          <p class="text-amber-600 font-semibold uppercase tracking-wider text-sm">
-            Fast Food
-          </p>
-          <h3 class="text-xl font-bold text-[#171717] mt-1">
-            Cheese Burger
-          </h3>
+      <!-- 1. Burger -->
+      <div id="burger" class="group bg-white rounded-2xl overflow-hidden shadow-lg">
+        <img src="images/burger.png" alt="Cheese Burger"
+          class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+        <div class="p-5">
+          <p class="text-amber-600 font-semibold text-sm">Fast Food</p>
+          <h3 class="text-xl font-bold text-[#171717] mt-2">Cheese Burger</h3>
         </div>
       </div>
 
-      <!-- Pizza -->
-      <div class="group">
-        <div class="overflow-hidden rounded-2xl shadow-lg">
-          <img src="images/pizza.png" alt="Cheese Pizza"
-            class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
-        </div>
-        <div class="mt-4 text-center">
-          <p class="text-amber-600 font-semibold uppercase tracking-wider text-sm">
-            Italian Food
-          </p>
-          <h3 class="text-xl font-bold text-[#171717] mt-1">
-            Margherita Pizza
-          </h3>
+      <!-- 2. Pizza -->
+      <div id="pizza" class="group bg-white rounded-2xl overflow-hidden shadow-lg">
+        <img src="images/pizza.png" alt="Margherita Pizza"
+          class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+        <div class="p-5">
+          <p class="text-amber-600 font-semibold text-sm">Italian Food</p>
+          <h3 class="text-xl font-bold text-[#171717] mt-2">Margherita Pizza</h3>
         </div>
       </div>
 
-      <!-- Pasta -->
-      <div class="group">
-        <div class="overflow-hidden rounded-2xl shadow-lg">
-          <img src="images/pasta.png" alt="Creamy Pasta"
-            class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
-        </div>
-        <div class="mt-4 text-center">
-          <p class="text-amber-600 font-semibold uppercase tracking-wider text-sm">
-            Italian Food
-          </p>
-          <h3 class="text-xl font-bold text-[#171717] mt-1">
-            Creamy White Sauce Pasta
-          </h3>
+      <!-- 3. Pasta -->
+      <div id="pasta" class="group bg-white rounded-2xl overflow-hidden shadow-lg">
+        <img src="images/pasta.png" alt="Creamy White Sauce Pasta"
+          class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+        <div class="p-5">
+          <p class="text-amber-600 font-semibold text-sm">Italian Food</p>
+          <h3 class="text-xl font-bold text-[#171717] mt-2">Creamy White Sauce Pasta</h3>
         </div>
       </div>
 
-      <!-- Chicken -->
-      <div class="group">
-        <div class="overflow-hidden rounded-2xl shadow-lg">
-          <img src="images/chicken.png" alt="Crispy Chicken"
-            class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
-        </div>
-        <div class="mt-4 text-center">
-          <p class="text-amber-600 font-semibold uppercase tracking-wider text-sm">
-            Non-Veg
-          </p>
-          <h3 class="text-xl font-bold text-[#171717] mt-1">
-            Crispy Fried Chicken
-          </h3>
+      <!-- 4. Chicken -->
+      <div id="chicken" class="group bg-white rounded-2xl overflow-hidden shadow-lg">
+        <img src="images/chicken.png" alt="Crispy Fried Chicken"
+          class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+        <div class="p-5">
+          <p class="text-amber-600 font-semibold text-sm">Non-Veg</p>
+          <h3 class="text-xl font-bold text-[#171717] mt-2">Crispy Fried Chicken</h3>
         </div>
       </div>
 
-      <!-- Salad -->
-      <div class="group">
-        <div class="overflow-hidden rounded-2xl shadow-lg">
-          <img src="images/salad.png" alt="Fresh Salad"
-            class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
-        </div>
-        <div class="mt-4 text-center">
-          <p class="text-amber-600 font-semibold uppercase tracking-wider text-sm">
-            Healthy Food
-          </p>
-          <h3 class="text-xl font-bold text-[#171717] mt-1">
-            Fresh Garden Salad
-          </h3>
+      <!-- 5. Salad -->
+      <div id="salad" class="group bg-white rounded-2xl overflow-hidden shadow-lg">
+        <img src="images/salad.png" alt="Fresh Garden Salad"
+          class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+        <div class="p-5">
+          <p class="text-amber-600 font-semibold text-sm">Healthy Food</p>
+          <h3 class="text-xl font-bold text-[#171717] mt-2">Fresh Garden Salad</h3>
         </div>
       </div>
 
-      <!-- Dessert -->
-      <div class="group">
-        <div class="overflow-hidden rounded-2xl shadow-lg">
-          <img src="images/dessert.png" alt="Chocolate Dessert"
-            class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+      <!-- 6. Dessert -->
+      <div id="dessert" class="group bg-white rounded-2xl overflow-hidden shadow-lg">
+        <img src="images/dessert.png" alt="Chocolate Brownie"
+          class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+        <div class="p-5">
+          <p class="text-amber-600 font-semibold text-sm">Sweet Treats</p>
+          <h3 class="text-xl font-bold text-[#171717] mt-2">Chocolate Brownie</h3>
         </div>
-        <div class="mt-4 text-center">
-          <p class="text-amber-600 font-semibold uppercase tracking-wider text-sm">
-            Sweet Treats
-          </p>
-          <h3 class="text-xl font-bold text-[#171717] mt-1">
-            Chocolate Brownie
-          </h3>
+      </div>
+
+      <!-- 7. Hakka Noodles -->
+      <div id="noodles" class="group bg-white rounded-2xl overflow-hidden shadow-lg">
+        <img src="images/hakka-noodles.png" alt="Hakka Noodles"
+          class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+        <div class="p-5">
+          <p class="text-amber-600 font-semibold text-sm">Chinese Food</p>
+          <h3 class="text-xl font-bold text-[#171717] mt-2">Hakka Noodles</h3>
+        </div>
+      </div>
+
+      <!-- 8. Momos -->
+      <div id="momos" class="group bg-white rounded-2xl overflow-hidden shadow-lg">
+        <img src="images/steam-momos.png" alt="Steamed Momos"
+          class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+        <div class="p-5">
+          <p class="text-amber-600 font-semibold text-sm">Street Food</p>
+          <h3 class="text-xl font-bold text-[#171717] mt-2">Steamed Momos</h3>
+        </div>
+      </div>
+
+      <!-- 9. French Fries -->
+      <div id="fries" class="group bg-white rounded-2xl overflow-hidden shadow-lg">
+        <img src="images/french-fries.png" alt="Crispy French Fries"
+          class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+        <div class="p-5">
+          <p class="text-amber-600 font-semibold text-sm">Fast Food</p>
+          <h3 class="text-xl font-bold text-[#171717] mt-2">Crispy French Fries</h3>
+        </div>
+      </div>
+
+      <!-- 10. Sandwich -->
+      <div id="sandwich" class="group bg-white rounded-2xl overflow-hidden shadow-lg">
+        <img src="images/sandwich.png" alt="Grilled Cheese Sandwich"
+          class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+        <div class="p-5">
+          <p class="text-amber-600 font-semibold text-sm">Snacks</p>
+          <h3 class="text-xl font-bold text-[#171717] mt-2">Grilled Cheese Sandwich</h3>
+        </div>
+      </div>
+
+      <!-- 11. Paneer Tikka -->
+      <div id="paneer-tikka" class="group bg-white rounded-2xl overflow-hidden shadow-lg">
+        <img src="images/paneer-tikka.png" alt="Paneer Tikka"
+          class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+        <div class="p-5">
+          <p class="text-amber-600 font-semibold text-sm">Indian Food</p>
+          <h3 class="text-xl font-bold text-[#171717] mt-2">Paneer Tikka</h3>
         </div>
       </div>
 
     </div>
-
   </div>
-
 </section>
+
 
 
 <!-- Restaurant Interior Section -->
